@@ -14,7 +14,7 @@ export const onMessageCreate = functions.database
    return snapshot.ref.update({text: text})
 
 
-})
+});
 
 export const onMessageCreateChicken = functions.database
 .ref('/rooms/{roomId}/messages/{messageId}')
